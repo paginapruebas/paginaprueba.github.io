@@ -12,6 +12,16 @@
   transition: all .3s;
 }
 
+*::selection {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode *::selection {
+  background-color: var(--beige);
+  color: black;
+}
+
 body {
   background-color: white;
   font-family: adobe-caslon-pro, sans-serif;
@@ -364,7 +374,7 @@ body.dark-mode .list-ap hr {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.7;
+  opacity: .5;
 }
 
 body.dark-mode .img-slider-item img {
@@ -392,11 +402,20 @@ body.dark-mode .img-slider-item img {
   margin: 0 auto;
 }
 
-.p-slider {
+body.dark-mode .text-slider {
+  color: white;
+}
+
+.p-slider, .h-slider {
   font-size: 2rem;
   line-height: 1.5;
   margin: 0;
   padding: 0;
+}
+
+.h-slider {
+  /* font-weight: bolder; */
+  text-decoration: underline;
 }
 
 /** Cuadros Informacion General */
