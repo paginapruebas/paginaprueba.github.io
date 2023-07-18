@@ -12,7 +12,7 @@ $(document).ready(function () {
         nextItem.addClass('active');
     }
 
-    setInterval(changeImage, 15000);
+    setInterval(changeImage, 10000);
 
     // Función para cambiar la posición del encabezado con transición suave
     function changeHeaderPosition() {
