@@ -1,298 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SRLL Abogados</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/f6d6f5a997.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f6d6f5a997.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
-</head>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <div class="btn-header">
-            <a class="btn-h" id="btn-linkedin" href="https://www.linkedin.com/in/sergio-ruiz-de-los-llanos-35730638"
-                target="blank"><i class="fa-brands fa-linkedin"></i></a> <br>
-            <a class="btn-h" id="btn-instagram" href="https://www.instagram.com/srllbienesraices" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a class="btn-h" id="btn-whatsapp" href="https://wa.me/3874890010" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a class="btn-h" id="btn-darkmode"><i class="fa-regular fa-moon"></i></a>
-        </div>
+      <div class="btn-header">
+        <a
+          class="btn-h"
+          id="btn-linkedin"
+          href="https://www.linkedin.com/in/sergio-ruiz-de-los-llanos-35730638"
+          target="blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <br />
+        <a
+          class="btn-h"
+          id="btn-instagram"
+          href="https://www.instagram.com/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          class="btn-h"
+          id="btn-whatsapp"
+          href="https://wa.me/3874890010"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a class="btn-h" id="btn-darkmode"
+          ><i class="fa-regular fa-moon"></i
+        ></a>
+      </div>
     </header>
     <main>
-        <section class="head">
-            <a href="#inicio" class="a-head">
-                <img src="img/logo-light.jpeg" alt="logo" id="logo" class="logo-light" />
-                <img src="img/logo-dark.jpeg" alt="logo" id="logo" class="logo-dark" />
-                <div class="texto">
-                    <h2>SERGIO RUIZ DE LOS LLANOS</h2>
-                    <h6>ABOGADO</h6>
-                    <hr>
-                </div>
-            </a>
+      <section class="head">
+        <a href="#inicio" class="a-head">
+          <img
+            src="img/logo-light.jpeg"
+            alt="logo"
+            id="logo"
+            class="logo-light"
+          />
+          <img
+            src="img/logo-dark.jpeg"
+            alt="logo"
+            id="logo"
+            class="logo-dark"
+          />
+          <div class="texto">
+            <h2>SERGIO RUIZ DE LOS LLANOS</h2>
+            <h6>ABOGADO</h6>
+            <hr />
+          </div>
+        </a>
 
-            <ul class="nav-head">
-                <li class="li-nav" id="titular">
-                    <a href="#su-titular">Su Titular <span
-                            style="font-size: 1rem; margin-left: 5px; margin-bottom: 5px;"> ↓</span></a>
-                    <div class="list-ap-container" id="list-ap-container-1">
-                        <ul class="list-ap">
-                            <li><a class="li-ap" href="#titulo-de-grado">Título de Grado</a></li>
-                            <hr>
-                            <li><a class="li-ap" href="#titulo-de-posgrado">Título de Posrado, Diplomatura, Pregrado y Cursos</a></li>
-                            <hr>
-                            <li><a class="li-ap" href="#experiencia-laboral">Experiencia Laboral</a></li>
-                        </ul>
-                    </div>
+        <ul class="nav-head">
+          <li class="li-nav"><a href="#su-titular">Su Titular</a></li>
+          <li class="li-nav"><a href="#institucional">Institucional</a></li>
+          <li class="li-nav" id="areas-de-practica">
+            <a href="#areas-practica"
+              >Áreas de Práctica
+              <span
+                style="font-size: 1rem; margin-left: 5px; margin-bottom: 5px"
+              >
+                ↓</span
+              ></a
+            >
+            <div class="list-ap-container">
+              <ul class="list-ap">
+                <li>
+                  <a class="li-ap" href="#civil-y-comercial"
+                    >Civil y Comercial</a
+                  >
                 </li>
-                <li class="li-nav"><a href="#institucional">Institucional</a></li>
-                <li class="li-nav" id="areas-de-practica">
-                    <a href="#areas-practica">Áreas de Práctica <span
-                            style="font-size: 1rem; margin-left: 5px; margin-bottom: 5px;"> ↓</span></a>
-                    <div class="list-ap-container">
-                        <ul class="list-ap">
-                            <li><a class="li-ap" href="#civil-y-comercial">Civil y Comercial</a></li>
-                            <hr>
-                            <li><a class="li-ap" href="#litigios">Litigios</a></li>
-                            <hr>
-                            <li><a class="li-ap" href="#real-estate">Real Estate</a></li>
-                            <hr>
-                            <li><a class="li-ap" href="#laboral">Laboral</a></li>
-                            <hr>
-                            <li><a class="li-ap" href="#administrativo">Administrativo</a></li>
-                        </ul>
-                    </div>
+                <hr />
+                <li><a class="li-ap" href="#litigios">Litigios</a></li>
+                <hr />
+                <li><a class="li-ap" href="#real-estate">Real Estate</a></li>
+                <hr />
+                <li><a class="li-ap" href="#laboral">Laboral</a></li>
+                <hr />
+                <li>
+                  <a class="li-ap" href="#administrativo">Administrativo</a>
                 </li>
-                <li class="li-nav"><a href="#corresponsalias-y-representaciones">Corresponsalías y Representaciones</a>
-                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="li-nav">
+            <a href="#corresponsalias-y-representaciones"
+              >Corresponsalías y Representaciones</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="img-slider">
+        <div class="img-slider-item ">
+          <img src="img/img-slider-1.jpg" alt="imagen fondo slider" />
+          <div class="text-slider">
+            <!-- <h2 class="h-slider">Experiencia y Asesoramiento Jurídico</h2> -->
+            <p class="p-slider">
+              Abrió sus puertas en el año 2007, brindando una atención
+              personalizada con cada uno de sus clientes, ofreciendo un
+              asesoramiento jurídico integral y contando con experiencia en
+              litigios en las áreas del derecho civil, comercial y laboral.
+            </p>
+          </div>
+        </div>
+        <div class="img-slider-item">
+          <img src="img/img-slider-2.jpg" alt="imagen fondo slider" />
+          <div class="text-slider">
+            <!-- <h2 class="h-slider">Prevención y Asistencia Legal</h2> -->
+            <p class="p-slider">
+              El estudio ofrece sus servicios haciendo especial hincapié en la
+              prevención del daño con la finalidad de evitar situaciones
+              desventajosas, minimizando los riesgos para sus clientes, y
+              asistiendo legalmente en la estructuración jurídica de nuevos
+              emprendimientos.
+            </p>
+          </div>
+        </div>
+        <div class="img-slider-item active">
+          <img src="img/img-slider-3.jpg" alt="imagen fondo slider" />
+          <div class="text-slider">
+            <!-- <h2 class="h-slider">Amplio Espectro de Servicios</h2> -->
+            <ul class="p-slider" id="list-slider">
+              <li> CONFIANZA </li>
+              <hr />
+              <li> SEGURIDAD </li>
+              <hr />
+              <li> TRANQUILIDAD </li>
+              <hr />
+              <li> CONFIDENCIALIDAD </li>
             </ul>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="img-slider">
-            <div class="img-slider-item active">
-                <img src="img/img-slider-1.jpg" alt="imagen fondo slider">
-                <div class="text-slider">
-                    <!-- <h2 class="h-slider">Experiencia y Asesoramiento Jurídico</h2> -->
-                    <p class="p-slider">
-                        Abrió sus puertas en el año 2007, brindando una atención personalizada con cada uno de sus
-                        clientes, ofreciendo un asesoramiento jurídico integral y contando con experiencia en litigios
-                        en las áreas del derecho civil, comercial y laboral
-                    </p>
-                </div>
-            </div>
-            <div class="img-slider-item">
-                <img src="img/img-slider-2.jpg" alt="imagen fondo slider">
-                <div class="text-slider">
-                    <!-- <h2 class="h-slider">Prevención y Asistencia Legal</h2> -->
-                    <p class="p-slider">
-                        El estudio ofrece sus servicios haciendo especial hincapié en la prevención del daño con la
-                        finalidad de evitar situaciones desventajosas, minimizando los riesgos para sus clientes, y
-                        asistiendo legalmente en la estructuración jurídica de nuevos emprendimientos
-                    </p>
-                </div>
-            </div>
-            <div class="img-slider-item">
-                <img src="img/img-slider-3.jpg" alt="imagen fondo slider">
-                <div class="text-slider">
-                    <!-- <h2 class="h-slider">Amplio Espectro de Servicios</h2> -->
-                    <p class="p-slider">
-                        TRANQUILIDAD<br>
-                        SEGURIDAD<br>
-                        CONFIANZA<br>
-                        CONFIDENCIALIDAD
-                    </p>
-                </div>
-            </div>
-
-
-            <!-- <div class="img-slider-item active">
-                <img src="img/img-slider-1.jpg" alt="imagen fondo slider">
-                <div class="text-slider">
-                    <p class="p-slider">
-                        Abrió sus puertas en el año 2007, brindando una atención personalizada con cada uno de sus
-                        clientes, ofreciendo un asesoramiento jurídico integral y contando con experiencia en litigios
-                        en las áreas del derecho civil, comercial y laboral.
-                    </p>
-                </div>
-            </div>
-            <div class="img-slider-item">
-                <img src="img/img-slider-2.jpg" alt="imagen fondo slider">
-                <div class="text-slider">
-                    <p class="p-slider">
-                        El estudio ofrece sus servicios haciendo especial hincapié en la prevención del daño con la
-                        finalidad de evitar situaciones desventajosas, minimizando los riesgos para sus clientes, y
-                        asistiendo legalmente en la estructuración jurídica de nuevos emprendimientos
-                    </p>
-                </div>
-            </div> -->
-
-            <!-- <div class="img-slider-item">
-                <img src="img/img-slider-3.jpg" alt="imagen fondo slider">
-                <div class="text-slider">
-                    <p class="p-slider">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore tempora quibusdam
-                        mollitia veritatis ratione illum, quos delectus itaque nihil adipisci aut repellat deserunt
-                        eveniet ipsam similique, exercitationem accusamus. Veritatis.
-                    </p>
-                </div>
-            </div> -->
-        </section>
-
-        <section class="box-iac-section">
-            <div id="su-titular" class="box-iac">
-                <div class="limites-box-iac">
-                    <h2>Su Titular</h2>
-                    <hr>
-                    <ul>
-                        <li id="principio">
-                            <ul class="inter-ul">
-                                <li>Sergio Ruiz de los Llanos: Nació en la ciudad de Salta en el año 1978 y egreso del
-                                    Colegio Belgrano de la ciudad homónima.</li>
-                            </ul>
-                        </li>
-                        <li id="titulo-de-grado">
-                            <h3>Título de Grado</h3>
-                            <ul class="inter-ul">
-                                <li>Abogado egresado de la Universidad Nacional de Tucumán (UNT).</li>
-                            </ul>
-                        </li>
-                        <li id="titulo-de-posgrado">
-                            <h3>Títulos de Posgrado, Diplomatura, Pregrado y Cursos</h3>
-                            <ul class="inter-ul">
-                                <li>Curso sobre Agenda Legal del Desarrollo Inmobiliaria dictado por el Dr. Agustín
-                                    Pérez Cambiasso (Estudio Jurídico Nicholson & Cano) de la Escuela de Negocios de
-                                    Real Estate 2023.- <br>
-                                    Diplomatura Universitaria en Gestión Integral Minera con orientación en Litio de la
-                                    Universidad Católica de Salta. Directora Dra. María C. Garros Martínez y Dr. Ricardo
-                                    Alonso. 2023. <br>
-                                    Corredor Inmobiliario egresado de la Universidad Católica de Salta (UCASAL).2020.
-                                    <br>
-                                    Maestrando de la Maestría de Administración de Negocios - MBA- (Escuela de Negocios
-                                    de la Universidad Católica de Salta - UCASAL). <br>
-                                    Curso de Posgrado Universitario de Actualización sobre el Nuevo Derecho Privado
-                                    Argentino, dictado por la Facultad de Ciencias Económicas, Jurídicas y Sociales de
-                                    la Universidad Nacional de Salta, la Escuela del Ministerio Público de Salta y la
-                                    Caja de Seguridad Social para Abogados de Salta (120 horas). Directora Dra. Graciela
-                                    Medina. 2015.- <br>
-                                    Curso Taller - Teórico Practico de Derecho Procesal Laboral del Consejo Académico de
-                                    la Escuela de la Abogacía para Graduados, dictado por el Dr. Roberto G. Loutayf
-                                    Ranea. 2007.- <br>
-                                    Curso Taller - Teórico Practico de Derecho Procesal Civil y Comercial del Consejo
-                                    Académico de la Escuela de la Abogacía para Graduados, dictado por el Dr. Roberto G.
-                                    Loutayf Ranea. 2007.
-                                </li>
-                            </ul>
-                        </li>
-                        <li id="experiencia-laboral">
-                            <h3>Experiencia Laboral</h3>
-                            <ul class="inter-ul">
-                                <li>Titular Estudio Jurídico. <br>
-                                    Asesor legal de la Secretaria de Tierra y Bienes del Gobierno de la Provincia de
-                                    Salta. <br>
-                                    Docente en las cátedras de Teoría General de las Obligaciones y Derechos de Daños y
-                                    de la Responsabilidad Civil de la Facultad de Ciencias Jurídicas de la Universidad
-                                    Católica de Salta. <br>
-                                    Asesor legal del Foro de Intendentes de la Provincia de Salta (culminado).
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="institucional" class="box-iac">
-                <h2>Institucional</h2>
-                <hr>
-                <div class="limites-box-iac">
-                    <ul class="inter-ul">
-                        <li> Su titular es matriculado en el Colegio de Abogaos y Procuradores de la Provincia de Salta
-                            y cuenta con matrícula para el ejercicio profesional en el Fuero Federal.</li>
-                        <li> El estudio es socio de la Cámara de Comercio y Servicios de la Provincia de Salta.</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="areas-practica" class="box-iac">
-                <div class="limites-box-iac">
-                    <h2>Áreas de Práctica</h2>
-                    <hr>
-                    <ul>
-                        <li id="civil-y-comercial">
-                            <h3>Civil y Comercial</h3>
-                            <ul class="inter-ul">
-                                <li>Redacción de contratos ajustado a las necesidades de cada cliente.</li>
-                                <li>Recupero de activos (cobranzas judiciales y extrajudiciales) sucesorios.</li>
-                            </ul>
-                        </li>
-                        <li id="litigios">
-                            <h3>Litigios</h3>
-                            <ul class="inter-ul">
-                                <li>Asiste y defiende a diversos clientes en litigios referidos a:</li>
-                                <li>Prescripciones adquisitivas de dominio (Posesión Veinteañal)</li>
-                                <li>Responsabilidad civil por incumplimiento contractual o daños ocasionados por hechos
-                                    ilícitos</li>
-                                <li>Juicios reivindicatorios de dominio y demás acciones de derecho real desalojos</li>
-                            </ul>
-                        </li>
-                        <li id="real-estate">
-                            <h3>Real Estate</h3>
-                            <ul class="inter-ul">
-                                <li>Estructuración legal en negocios inmobiliarios.</li>
-                                <li>Estudio de Títulos</li>
-                                <li>Administración de Propiedades</li>
-                                <li>Asistencia legal en la compra y venta de propiedades</li>
-                            </ul>
-                        </li>
-                        <li id="laboral">
-                            <h3>Laboral</h3>
-                            <ul class="inter-ul">
-                                <li>Asiste a los empleadores asesorándolo en un correcto encuadre en la relación laboral
-                                    de sus dependientes.</li>
-                                <li>Presta servicio de asesoramiento a los trabajadores brindándole las garantías
-                                    establecidas por derecho del trabajo conforme Ley 20744 (Indemnizaciones, Accidentes
-                                    de Trabajo ante Superintendencia de Riesgo de Trabajo).</li>
-                                <li>Asistencia letrada en los procesos judiciales y antes reclamos en la Secretaria de
-                                    Trabajo</li>
-                            </ul>
-                        </li>
-                        <li id="administrativo">
-                            <h3>Administrativo</h3>
-                            <ul class="inter-ul">
-                                <li>Brinda asistencia legal y técnica ante gestiones y trámites llevados a cabo en las
-                                    diferentes reparticiones Gubernamentales, como ser ante la Secretaria de Medio
-                                    Ambiente,
-                                    Secretaria de
-                                    Recursos Hídricos, Dirección General de Inmuebles, Secretaria de Tierras, Secretaria
-                                    de
-                                    Minería y Recursos Energéticos y Secretaria de Defensa del Consumidor.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="corresponsalias-y-representaciones" class="box-iac">
-                <h2>Corresponsalías y Representaciones</h2>
-                <hr>
-                <div class="limites-box-iac">
-                    <ul class="inter-ul">
-                        <li> Inscripción de contratos societarios ante la Dirección General de Sociedades (constitución,
-                            inscripción, modificaciones, disolución y liquidación).</li>
-                        <li> Corresponsalía con abogados de los Distritos Judiciales del interior de la Provincia de
-                            Salta (Oran, Tartagal, Joaquín V. González, Metan y Cafayate).</li>
-                        <li> Corresponsalía con estudios jurídicos de las provincias de Buenos Aires, Tucumán y Jujuy.
-                        </li>
-                        <li> El estudio representa a personas físicas o jurídicas que deban actuar en la Provincia de
-                            Salta.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <section class="box-iac-section">
+        <div id="su-titular" class="box-iac">
+          <div class="limites-box-iac">
+            <h2>Su Titular</h2>
+            <hr />
+            <ul>
+              <li id="principio">
+                <ul class="inter-ul">
+                  <li>
+                    Sergio Ruiz de los Llanos: Nació en la ciudad de Salta en el
+                    año 1978 y egresó del Colegio Belgrano de la ciudad
+                    homónima.
+                  </li>
+                </ul>
+              </li>
+              <li id="titulo-de-grado">
+                <h3>Título de Grado</h3>
+                <ul class="inter-ul">
+                  <li>
+                    Abogado egresado de la Universidad Nacional de Tucumán
+                    (UNT).
+                  </li>
+                </ul>
+              </li>
+              <li id="titulo-de-posgrado">
+                <h3>Títulos de Posgrado, Diplomatura, Pregrado y Cursos</h3>
+                <ul class="inter-ul">
+                  <li>
+                    Curso sobre Agenda Legal del Desarrollo Inmobiliaria dictado
+                    por el Dr. Agustín Pérez Cambiasso (Estudio Jurídico
+                    Nicholson & Cano) de la Escuela de Negocios de Real Estate
+                    2023.
+                  </li>
+                  <li>
+                    Diplomatura Universitaria en Gestión Integral Minera con
+                    orientación en Litio de la Universidad Católica de Salta.
+                    Directora Dra. María C. Garros Martínez y Dr. Ricardo
+                    Alonso. 2023.
+                  </li>
+                  <li>
+                    Corredor Inmobiliario egresado de la Universidad Católica de
+                    Salta (UCASAL). 2020.
+                  </li>
+                  <li>
+                    Maestrando de la Maestría de Administración de Negocios -
+                    MBA- (Escuela de Negocios de la Universidad Católica de
+                    Salta - UCASAL).
+                  </li>
+                  <li>
+                    Curso de Posgrado Universitario de Actualización sobre el
+                    Nuevo Derecho Privado Argentino, dictado por la Facultad de
+                    Ciencias Económicas, Jurídicas y Sociales de la Universidad
+                    Nacional de Salta, la Escuela del Ministerio Público de
+                    Salta y la Caja de Seguridad Social para Abogados de Salta
+                    (120 horas). Directora Dra. Graciela Medina. 2015.
+                  </li>
+                  <li>
+                    Curso Taller - Teórico Practico de Derecho Procesal Laboral
+                    del Consejo Académico de la Escuela de la Abogacía para
+                    Graduados, dictado por el Dr. Roberto G. Loutayf Ranea.
+                     2007.
+                  </li>
+                  <li>
+                    Curso Taller - Teórico Practico de Derecho Procesal Civil y
+                    Comercial del Consejo Académico de la Escuela de la Abogacía
+                    para Graduados, dictado por el Dr. Roberto G. Loutayf Ranea.
+                     2007.
+                  </li>
+                </ul>
+              </li>
+              <li id="experiencia-laboral">
+                <h3>Experiencia Laboral</h3>
+                <ul class="inter-ul">
+                  <li>Titular Estudio Jurídico.</li>
+                  <li>
+                    Asesor legal de la Secretaria de Tierra y Bienes del
+                    Gobierno de la Provincia de Salta.
+                  </li>
+                  <li>
+                    Docente en las cátedras de Teoría General de las
+                    Obligaciones y Derechos de Daños y de la Responsabilidad
+                    Civil de la Facultad de Ciencias Jurídicas de la Universidad
+                    Católica de Salta.
+                  </li>
+                  <li>
+                    Asesor legal del Foro de Intendentes de la Provincia de
+                    Salta (culminado).
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="institucional" class="box-iac">
+          <h2>Institucional</h2>
+          <hr />
+          <div class="limites-box-iac">
+            <ul class="inter-ul">
+              <li>
+                Su titular es matriculado en el Colegio de Abogaos y
+                Procuradores de la Provincia de Salta y cuenta con matrícula
+                para el ejercicio profesional en el Fuero Federal.
+              </li>
+              <li>
+                El estudio es socio de la Cámara de Comercio y Servicios de la
+                Provincia de Salta.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="areas-practica" class="box-iac">
+          <div class="limites-box-iac">
+            <h2>Áreas de Práctica</h2>
+            <hr />
+            <ul>
+              <li id="civil-y-comercial">
+                <h3>Civil y Comercial</h3>
+                <ul class="inter-ul">
+                  <li>
+                    Redacción de contratos ajustado a las necesidades de cada
+                    cliente.
+                  </li>
+                  <li>
+                    Recupero de activos (cobranzas judiciales y
+                    extrajudiciales).
+                  </li>
+                  <li>Procesos Sucesorios.</li>
+                </ul>
+              </li>
+              <li id="litigios">
+                <h3>Litigios</h3>
+                <ul class="inter-ul">
+                  <li style="list-style-type: none">
+                    Asiste y defiende a diversos clientes en litigios referidos
+                    a:
+                  </li>
+                  <li>
+                    Prescripciones adquisitivas de dominio (Posesión
+                    Veinteañal).
+                  </li>
+                  <li>
+                    Responsabilidad civil por incumplimiento contractual o daños
+                    ocasionados por hechos ilícitos.
+                  </li>
+                  <li>
+                    Juicios reivindicatorios de dominio y demás acciones de
+                    derecho real.
+                  </li>
+                  <li>Juicio de Desalojo.</li>
+                </ul>
+              </li>
+              <li id="real-estate">
+                <h3>Real Estate</h3>
+                <ul class="inter-ul">
+                  <li>Estructuración legal en negocios inmobiliarios.</li>
+                  <li>Estudio de Títulos.</li>
+                  <li>Administración de Propiedades.</li>
+                  <li>Asistencia legal en la compra y venta de propiedades.</li>
+                </ul>
+              </li>
+              <li id="laboral">
+                <h3>Laboral</h3>
+                <ul class="inter-ul">
+                  <li>
+                    Asiste a los empleadores asesorándolo en un correcto
+                    encuadre en la relación laboral de sus dependientes.
+                  </li>
+                  <li>
+                    Presta servicio de asesoramiento a los trabajadores
+                    brindándole las garantías establecidas por derecho del
+                    trabajo conforme Ley 20744 (Indemnizaciones, Accidentes de
+                    Trabajo ante Superintendencia de Riesgo de Trabajo).
+                  </li>
+                  <li>
+                    Asistencia letrada en los procesos judiciales y antes
+                    reclamos en la Secretaria de Trabajo.
+                  </li>
+                </ul>
+              </li>
+              <li id="administrativo">
+                <h3>Administrativo</h3>
+                <ul class="inter-ul">
+                  <li style="list-style-type: none; padding-left: 0;">
+                    Brinda asistencia legal y técnica ante gestiones y trámites
+                    llevados a cabo en las diferentes reparticiones
+                    Gubernamentales, como ser ante la Secretaria de Medio
+                    Ambiente, Secretaria de Recursos Hídricos, Dirección General
+                    de Inmuebles, Secretaria de Tierras, Secretaria de Minería y
+                    Recursos Energéticos y Secretaria de Defensa del Consumidor.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="corresponsalias-y-representaciones" class="box-iac">
+          <h2>Corresponsalías y Representaciones</h2>
+          <hr />
+          <div class="limites-box-iac">
+            <ul class="inter-ul">
+              <li>
+                Inscripción de contratos societarios ante la Dirección General
+                de Sociedades (constitución, inscripción, modificaciones,
+                disolución y liquidación).
+              </li>
+              <li>
+                Corresponsalía con abogados de los Distritos Judiciales del
+                interior de la Provincia de Salta (Oran, Tartagal, Joaquín V.
+                González, Metan y Cafayate).
+              </li>
+              <li>
+                Corresponsalía con estudios jurídicos de las provincias de
+                Buenos Aires, Tucumán y Jujuy.
+              </li>
+              <li>
+                El estudio representa a personas físicas o jurídicas que deban
+                actuar en la Provincia de Salta.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <a href="#" class="toup">↑</a>
-
-</body>
-
+  </body>
 </html>
