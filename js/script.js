@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     // Función para cambiar la posición del encabezado con transición suave
     function changeHeaderPosition() {
-        var header = $('#header');
+        var header = $('#header-fixed');
         var scrollTop = $(window).scrollTop();
 
         if (scrollTop > header.outerHeight()) {
@@ -28,17 +28,14 @@ $(document).ready(function () {
             }
         } else {
             header.removeClass('fixed-header');
-            // header.css('opacity', '0');
+            header.css('opacity', '0');
         }
     }
 
-    // Llamada inicial a la función de cambio de posición
     changeHeaderPosition();
 
-    // Llamada a la función de cambio de posición cuando se hace scroll
     $(window).scroll(changeHeaderPosition);
 
-    // Función para cambiar el modo de color
     function cambiarModoOscuro() {
         document.body.classList.toggle("dark-mode");
     }

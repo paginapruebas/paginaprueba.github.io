@@ -9,6 +9,8 @@
 
   scroll-behavior: smooth;
   transition: all .3s;
+
+  scroll-margin-top: 4rem;
 }
 
 *::selection {
@@ -39,16 +41,17 @@ body.dark-mode {
   position: fixed;
   padding: 0;
   bottom: 1rem;
-  right: 1rem;
-  width: 50px;
-  height: 50px;
+  right: .2rem;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: white;
-  border: 2px black solid;
+  border: 1px black solid;
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  z-index: 999999;
   transition: all .1s;
 }
 
@@ -66,7 +69,7 @@ body.dark-mode #toup {
 
 /** ----- HEADER ----- */
 
-header {
+#header {
   position: relative;
   top: 0;
   left: 0;
@@ -83,10 +86,30 @@ header {
   opacity: 1;
 }
 
-header.fixed-header {
+#header-fixed {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  padding: 10px;
+  background-color: var(--beige);
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 999999999;
+  border-bottom: 2px black transparent;
+  transition: all .3s;
+  opacity: 0;
+}
+
+#header-fixed.fixed-header {
+  position: fixed;
+  display: flex;
   animation: fixed-animation 1s;
   border-bottom: 2px black solid;
+  opacity: 1;
 }
 
 @keyframes fixed-animation {
@@ -99,9 +122,14 @@ header.fixed-header {
   }
 }
 
-body.dark-mode header {
+body.dark-mode #header {
   background-color: var(--bg);
   border-bottom: 2px white solid;
+}
+
+body.dark-mode #header-fixed {
+  background-color: var(--bg);
+  border-color: white;
 }
 
 .btn-header {
@@ -142,6 +170,49 @@ body.dark-mode .btn-h i {
   border-radius: 25%;
   cursor: pointer;
 }
+
+.btn-h:hover .cuadro-informacion {
+  display: block;
+  height: auto;
+}
+
+.cuadro-informacion {
+  display: none;
+  position: absolute;
+  top: 110%;
+  justify-content: center;
+  min-width: 120%;
+  padding: 5px;
+  z-index: 99;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  border: 2px black solid;
+  font-weight: bold;
+  font-size: .7rem;
+  border-radius: 1rem;
+  transition: all 1s;
+}
+
+body.dark-mode .cuadro-informacion {
+  background-color: var(--bg);
+  border-color: white;
+  color: white;
+}
+
+/* .cuadro-informacion::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px black solid;
+} */
 
 /** ----- HEAD ----- */
 .head {
@@ -478,7 +549,6 @@ body.dark-mode .box-iac-section hr {
 }
 
 /** FOOTER */
-/* Estilos generales del footer */
 #footer {
   background-color: var(--beige);
   z-index: 999999999;
@@ -489,13 +559,32 @@ body.dark-mode .box-iac-section hr {
   gap: 20px;
 }
 
-/* Estilos del center-footer */
-.center-footer {
-  grid-column: 2; /* Ocupa la columna del medio */
-  grid-row: 1 / span 2; /* Ocupa desde la fila 1 hasta la fila 2 */
+.left-footer,
+.center-footer,
+.right-footer {
   display: flex;
   justify-content: center;
+}
+
+.left-footer {
+  align-items: start;
+  flex-direction: column;
+  text-align: start;
+  grid-column: 1;
+}
+
+.center-footer {
   align-items: center;
+  flex-direction: row;
+  text-align: center;
+  grid-column: 2;
+}
+
+.right-footer {
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  grid-column: 3;
 }
 
 .logo-footer {
@@ -512,19 +601,45 @@ body.dark-mode .box-iac-section hr {
 }
 
 .logo-footer h2 {
+  color: black;
   font-size: 1.5rem;
+}
+
+body.dark-mode .logo-footer h2 {
+  color: white;
 }
 
 .logo-footer h6 {
   font-size: 1rem;
   letter-spacing: 1.5rem;
   margin-bottom: 5px;
+  color: black;
 }
 
-body.darkmode #footer {
-  background: var(--bg);
+body.dark-mode .logo-footer h6 {
   color: white;
 }
+
+.logo-footer hr{
+  height: 2px;
+  background-color: black;
+  width: 100%;
+  border: none;
+  margin: 1rem auto;
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+body.dark-mode .logo-footer hr {
+  background-color: white;
+}
+
+body.dark-mode #footer {
+  background: var(--bg);
+  color: white;
+  border-color: white;
+}
+
 
 @media screen and (max-width:800px) {
   body {
