@@ -2,7 +2,6 @@
 *::after,
 *::before {
   --beige: #c9b590;
-  /* --beige: #695020; */
   --bg: #3b2b0d;
 
   margin: 0;
@@ -27,57 +26,39 @@ body {
   font-family: adobe-caslon-pro, sans-serif;
   width: auto;
   padding-top: 0;
+  font-size: 16px;
 }
 
 body.dark-mode {
   background-color: var(--bg);
+  color: white;
 }
 
-.toup {
+#toup {
+  display: flex;
   position: fixed;
+  padding: 0;
   bottom: 1rem;
   right: 1rem;
   width: 50px;
   height: 50px;
-  background-color: var(--beige);
-  border: 2px black solid;
   border-radius: 50%;
-  color: black;
-  font-size: 2rem;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
+  background-color: white;
+  border: 2px black solid;
   justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.5rem;
   transition: all .1s;
 }
 
-.darkmode {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  width: 50px;
-  height: 50px;
-  background-color: var(--beige);
-  border: 2px black solid;
-  border-radius: 50%;
-  color: black;
-  font-size: 2rem;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  justify-content: center;
-  transition: all .1s;
-  font-size: 1rem;
-  padding: 10px;
-}
-
-body.dark-mode .toup {
+body.dark-mode #toup {
   background-color: var(--bg);
   color: white;
   border-color: white;
 }
 
-.toup:hover,
+#toup:hover,
 .darkmode:hover {
   transform: scale(1.15);
   border-radius: 25%;
@@ -172,7 +153,7 @@ body.dark-mode .btn-h i {
   width: 100%;
 }
 
-a {
+.logo-head {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -181,11 +162,11 @@ a {
   text-decoration: none;
 }
 
-a :hover {
+.logo-head :hover {
   cursor: pointer;
 }
 
-a img {
+.logo-head img {
   height: 5rem;
   margin: 0.625rem;
   border-radius: 50%;
@@ -207,8 +188,8 @@ body.dark-mode .logo-light {
   display: block;
 }
 
-a h2,
-a h2 :hover {
+.logo-head h2,
+.logo-head h2 :hover {
   font-size: 1.875rem;
   color: black;
 }
@@ -217,18 +198,18 @@ body.dark-mode a h2 {
   color: white;
 }
 
-a .texto h6 {
+.logo-head .text-logo-head h6 {
   color: black;
   text-decoration: none;
   font-size: 1rem;
   letter-spacing: 2rem;
 }
 
-body.dark-mode a .texto h6 {
+body.dark-mode a .text-logo-head h6 {
   color: white;
 }
 
-a .texto hr {
+.logo-head .text-logo-head hr {
   height: 2px;
   background-color: black;
   width: 65%;
@@ -238,7 +219,7 @@ a .texto hr {
   margin-top: 5px;
 }
 
-body.dark-mode a .texto hr {
+body.dark-mode a .text-logo-head hr {
   background-color: white;
 }
 
@@ -277,11 +258,6 @@ body.dark-mode .li-nav a {
   width: 100%;
   z-index: 99;
   text-align: center;
-}
-
-#list-ap-container-1 {
-  width: 200px;
-  left: -50%;
 }
 
 .li-nav:hover .list-ap-container {
@@ -411,7 +387,8 @@ body.dark-mode .text-slider {
   color: white;
 }
 
-.p-slider, .h-slider {
+.p-slider,
+.h-slider {
   font-size: 2rem;
   line-height: 1.5;
   margin: 0;
@@ -500,21 +477,53 @@ body.dark-mode .box-iac-section hr {
   list-style-type: circle;
 }
 
-footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: auto;
-  padding: 10px;
+/** FOOTER */
+/* Estilos generales del footer */
+#footer {
   background-color: var(--beige);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
   z-index: 999999999;
-  transition: opacity .3s ease;
-  opacity: 1;
+  border-top: 2px black solid;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Estilos del center-footer */
+.center-footer {
+  grid-column: 2; /* Ocupa la columna del medio */
+  grid-row: 1 / span 2; /* Ocupa desde la fila 1 hasta la fila 2 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-footer img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo-footer h2 {
+  font-size: 1.5rem;
+}
+
+.logo-footer h6 {
+  font-size: 1rem;
+  letter-spacing: 1.5rem;
+  margin-bottom: 5px;
+}
+
+body.darkmode #footer {
+  background: var(--bg);
+  color: white;
 }
 
 @media screen and (max-width:800px) {
