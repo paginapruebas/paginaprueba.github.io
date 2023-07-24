@@ -548,6 +548,28 @@ body.dark-mode .box-iac-section hr {
   list-style-type: circle;
 }
 
+.titular-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: -8rem;
+}
+
+.titular-container img {
+  width: 25%;
+  height: auto;
+  margin-left: auto;
+  border: 2px black solid;
+  border-radius: 1rem;
+}
+
+.titular-container ul {
+  width: 65%;
+  height: auto;
+  margin-right: auto;
+}
+
 /** FOOTER */
 #footer {
   background-color: var(--beige);
