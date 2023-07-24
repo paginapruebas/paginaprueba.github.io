@@ -538,8 +538,6 @@ body.dark-mode .box-iac-section hr {
 
 .limites-box-iac {
   display: block;
-  left: 0;
-  top: 0;
   width: 70%;
   margin: auto;
 }
@@ -549,25 +547,21 @@ body.dark-mode .box-iac-section hr {
 }
 
 .titular-container {
-  display: flex;
-  flex-direction: row-reverse;
+  display: block;
   width: 100%;
-  justify-content: space-between;
-  margin-bottom: -8rem;
 }
 
 .titular-container img {
+  float: right;
   width: 25%;
   height: auto;
-  margin-left: auto;
+  margin-left: 1rem;
   border: 2px black solid;
   border-radius: 1rem;
 }
 
 .titular-container ul {
-  width: 65%;
-  height: auto;
-  margin-right: auto;
+  margin-right: 1rem;
 }
 
 /** FOOTER */
