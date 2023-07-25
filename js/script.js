@@ -41,4 +41,5 @@ $(document).ready(function () {
     }
 
     document.getElementById("btn-darkmode").addEventListener("click", cambiarModoOscuro);
+    document.getElementById("btn-darkmode-fixed").addEventListener("click", cambiarModoOscuro);
 });
