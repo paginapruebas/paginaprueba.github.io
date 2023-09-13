@@ -42,8 +42,8 @@ body.dark-mode {
   padding: 0;
   bottom: 1rem;
   right: .2rem;
-  width: 35px;
-  height: 35px;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 50%;
   background-color: white;
   border: 1px black solid;
@@ -69,13 +69,13 @@ body.dark-mode #toup {
 
 /** ----- HEADER ----- */
 
-#header {
+#header, #header-fixed {
   position: relative;
   top: 0;
   left: 0;
   right: 0;
   width: auto;
-  padding: 10px;
+  padding: 0.6rem;
   background-color: var(--beige);
   display: flex;
   flex-direction: row;
@@ -88,19 +88,8 @@ body.dark-mode #toup {
 
 #header-fixed {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: auto;
-  padding: 10px;
-  background-color: var(--beige);
   display: none;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  z-index: 999999999;
   border-bottom: 2px black transparent;
-  transition: all .3s;
   opacity: 0;
 }
 
@@ -133,7 +122,7 @@ body.dark-mode #header-fixed {
 }
 
 .btn-header {
-  margin-right: 1.25rem;
+  margin: 0 calc(1.25rem / 2);
   display: flex;
   flex-direction: row;
 }
@@ -613,55 +602,27 @@ body.dark-mode .box-iac-section hr {
   border-radius: 50%;
 }
 
-/* .logo-footer {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-}
-
-.logo-footer img {
-  width: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.logo-footer h2 {
-  color: black;
-  font-size: 1.5rem;
-}
-
-body.dark-mode .logo-footer h2 {
-  color: white;
-}
-
-.logo-footer h6 {
-  font-size: 1rem;
-  letter-spacing: 1.5rem;
-  margin-bottom: 5px;
-  color: black;
-}
-
-body.dark-mode .logo-footer h6 {
-  color: white;
-}
-
-.logo-footer hr{
-  height: 2px;
-  background-color: black;
-  width: 100%;
-  border: none;
-  margin: 1rem auto;
-  margin-left: 0;
-  margin-top: 5px;
-}
-
-body.dark-mode .logo-footer hr {
-  background-color: white;
-} */
-
 body.dark-mode #footer {
   background: var(--bg);
   color: white;
   border-color: white;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+
+  #toup {
+    bottom: .5rem;
+    right: 50%;
+  }
+
+  /** ----- HEADER ----- */
+
+  #header, #header-fixed {
+    justify-content: center;
+  }
+
+  
 }
