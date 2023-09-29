@@ -3,13 +3,10 @@
 *::before {
   --beige: #c9b590;
   --bg: #3b2b0d;
-
   margin: 0;
   text-decoration: none;
-
   scroll-behavior: smooth;
   transition: all .3s;
-
   scroll-margin-top: 4rem;
 }
 
@@ -190,19 +187,6 @@ body.dark-mode .cuadro-informacion {
   color: white;
 }
 
-/* .cuadro-informacion::before {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px black solid;
-} */
-
 /** ----- HEAD ----- */
 .head {
   display: flex;
@@ -219,11 +203,6 @@ body.dark-mode .cuadro-informacion {
   justify-content: center;
   align-items: center;
   margin-left: 0.625rem;
-  text-decoration: none;
-}
-
-.logo-head :hover {
-  cursor: pointer;
 }
 
 .logo-head img {
@@ -610,7 +589,7 @@ body.dark-mode #footer {
 
 @media screen and (max-width: 800px) {
   body {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   #toup {
@@ -624,5 +603,30 @@ body.dark-mode #footer {
     justify-content: center;
   }
 
-  
+  /** HEAD **/
+  .head {
+    flex-wrap: wrap;
+  }
+
+  .logo-head {
+    width: 90%;
+    margin: auto;
+  }
+
+  .logo-head img {
+    max-height: 3.5rem;
+  }
+
+  .logo-head .text-logo-head h2 {
+    font-size: 1.5rem;
+  }
+
+  .logo-head .text-logo-head  h6{
+    font-size: 1.25rem;
+    letter-spacing: normal;
+  }
+
+  .logo-head .text-logo-head hr {
+    display: none;
+  }
 }
